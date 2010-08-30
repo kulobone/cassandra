@@ -28,7 +28,7 @@ function key_cms()
     if($lengt==0)
     {
        fwrite($Handle,$Data);
-        if(lengt<=0)
+        if($lengt<=0)
            fwrite($Handle,",");   
     }
    else if($lengt>0)
