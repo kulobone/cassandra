@@ -13,7 +13,7 @@ function key_cms()
          $inner = ($lengt-1);
          $Data = ($inner);
        }
-      else if(lengt==0)
+      else if($lengt==0)
       {
          $inner =0;
          $Data = ($inner);
@@ -25,13 +25,13 @@ function key_cms()
      }
 
 
-    if(lengt==0)
+    if($lengt==0)
     {
        fwrite($Handle,$Data);
         if(lengt<=0)
            fwrite($Handle,",");   
     }
-   else if(lengt>0)
+   else if($lengt>0)
     {
         fwrite($Handle,",".$Data);
     } 
